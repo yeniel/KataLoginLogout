@@ -1,0 +1,583 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FE25BA822153D9F300872C41 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE25BA812153D9F300872C41 /* AppDelegate.swift */; };
+		FE25BA842153D9F300872C41 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE25BA832153D9F300872C41 /* ViewController.swift */; };
+		FE25BA872153D9F300872C41 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE25BA852153D9F300872C41 /* Main.storyboard */; };
+		FE25BA892153D9F400872C41 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE25BA882153D9F400872C41 /* Assets.xcassets */; };
+		FE25BA8C2153D9F400872C41 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE25BA8A2153D9F400872C41 /* LaunchScreen.storyboard */; };
+		FE25BA972153D9F400872C41 /* KataLoginLogoutTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE25BA962153D9F400872C41 /* KataLoginLogoutTests.swift */; };
+		FE25BAA22153D9F400872C41 /* KataLoginLogoutUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE25BAA12153D9F400872C41 /* KataLoginLogoutUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FE25BA932153D9F400872C41 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FE25BA762153D9F300872C41 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FE25BA7D2153D9F300872C41;
+			remoteInfo = KataLoginLogout;
+		};
+		FE25BA9E2153D9F400872C41 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FE25BA762153D9F300872C41 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FE25BA7D2153D9F300872C41;
+			remoteInfo = KataLoginLogout;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FE25BA7E2153D9F300872C41 /* KataLoginLogout.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KataLoginLogout.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FE25BA812153D9F300872C41 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FE25BA832153D9F300872C41 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FE25BA862153D9F300872C41 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FE25BA882153D9F400872C41 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FE25BA8B2153D9F400872C41 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FE25BA8D2153D9F400872C41 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FE25BA922153D9F400872C41 /* KataLoginLogoutTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KataLoginLogoutTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FE25BA962153D9F400872C41 /* KataLoginLogoutTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KataLoginLogoutTests.swift; sourceTree = "<group>"; };
+		FE25BA982153D9F400872C41 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FE25BA9D2153D9F400872C41 /* KataLoginLogoutUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KataLoginLogoutUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FE25BAA12153D9F400872C41 /* KataLoginLogoutUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KataLoginLogoutUITests.swift; sourceTree = "<group>"; };
+		FE25BAA32153D9F400872C41 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FE25BA7B2153D9F300872C41 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FE25BA8F2153D9F400872C41 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FE25BA9A2153D9F400872C41 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FE25BA752153D9F300872C41 = {
+			isa = PBXGroup;
+			children = (
+				FE25BA802153D9F300872C41 /* KataLoginLogout */,
+				FE25BA952153D9F400872C41 /* KataLoginLogoutTests */,
+				FE25BAA02153D9F400872C41 /* KataLoginLogoutUITests */,
+				FE25BA7F2153D9F300872C41 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FE25BA7F2153D9F300872C41 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FE25BA7E2153D9F300872C41 /* KataLoginLogout.app */,
+				FE25BA922153D9F400872C41 /* KataLoginLogoutTests.xctest */,
+				FE25BA9D2153D9F400872C41 /* KataLoginLogoutUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FE25BA802153D9F300872C41 /* KataLoginLogout */ = {
+			isa = PBXGroup;
+			children = (
+				FE25BA812153D9F300872C41 /* AppDelegate.swift */,
+				FE25BA832153D9F300872C41 /* ViewController.swift */,
+				FE25BA852153D9F300872C41 /* Main.storyboard */,
+				FE25BA882153D9F400872C41 /* Assets.xcassets */,
+				FE25BA8A2153D9F400872C41 /* LaunchScreen.storyboard */,
+				FE25BA8D2153D9F400872C41 /* Info.plist */,
+			);
+			path = KataLoginLogout;
+			sourceTree = "<group>";
+		};
+		FE25BA952153D9F400872C41 /* KataLoginLogoutTests */ = {
+			isa = PBXGroup;
+			children = (
+				FE25BA962153D9F400872C41 /* KataLoginLogoutTests.swift */,
+				FE25BA982153D9F400872C41 /* Info.plist */,
+			);
+			path = KataLoginLogoutTests;
+			sourceTree = "<group>";
+		};
+		FE25BAA02153D9F400872C41 /* KataLoginLogoutUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FE25BAA12153D9F400872C41 /* KataLoginLogoutUITests.swift */,
+				FE25BAA32153D9F400872C41 /* Info.plist */,
+			);
+			path = KataLoginLogoutUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FE25BA7D2153D9F300872C41 /* KataLoginLogout */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FE25BAA62153D9F400872C41 /* Build configuration list for PBXNativeTarget "KataLoginLogout" */;
+			buildPhases = (
+				FE25BA7A2153D9F300872C41 /* Sources */,
+				FE25BA7B2153D9F300872C41 /* Frameworks */,
+				FE25BA7C2153D9F300872C41 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KataLoginLogout;
+			productName = KataLoginLogout;
+			productReference = FE25BA7E2153D9F300872C41 /* KataLoginLogout.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FE25BA912153D9F400872C41 /* KataLoginLogoutTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FE25BAA92153D9F400872C41 /* Build configuration list for PBXNativeTarget "KataLoginLogoutTests" */;
+			buildPhases = (
+				FE25BA8E2153D9F400872C41 /* Sources */,
+				FE25BA8F2153D9F400872C41 /* Frameworks */,
+				FE25BA902153D9F400872C41 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FE25BA942153D9F400872C41 /* PBXTargetDependency */,
+			);
+			name = KataLoginLogoutTests;
+			productName = KataLoginLogoutTests;
+			productReference = FE25BA922153D9F400872C41 /* KataLoginLogoutTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FE25BA9C2153D9F400872C41 /* KataLoginLogoutUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FE25BAAC2153D9F400872C41 /* Build configuration list for PBXNativeTarget "KataLoginLogoutUITests" */;
+			buildPhases = (
+				FE25BA992153D9F400872C41 /* Sources */,
+				FE25BA9A2153D9F400872C41 /* Frameworks */,
+				FE25BA9B2153D9F400872C41 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FE25BA9F2153D9F400872C41 /* PBXTargetDependency */,
+			);
+			name = KataLoginLogoutUITests;
+			productName = KataLoginLogoutUITests;
+			productReference = FE25BA9D2153D9F400872C41 /* KataLoginLogoutUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FE25BA762153D9F300872C41 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = "Yeniel Landestoy";
+				TargetAttributes = {
+					FE25BA7D2153D9F300872C41 = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+					FE25BA912153D9F400872C41 = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = FE25BA7D2153D9F300872C41;
+					};
+					FE25BA9C2153D9F400872C41 = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = FE25BA7D2153D9F300872C41;
+					};
+				};
+			};
+			buildConfigurationList = FE25BA792153D9F300872C41 /* Build configuration list for PBXProject "KataLoginLogout" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FE25BA752153D9F300872C41;
+			productRefGroup = FE25BA7F2153D9F300872C41 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FE25BA7D2153D9F300872C41 /* KataLoginLogout */,
+				FE25BA912153D9F400872C41 /* KataLoginLogoutTests */,
+				FE25BA9C2153D9F400872C41 /* KataLoginLogoutUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FE25BA7C2153D9F300872C41 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE25BA8C2153D9F400872C41 /* LaunchScreen.storyboard in Resources */,
+				FE25BA892153D9F400872C41 /* Assets.xcassets in Resources */,
+				FE25BA872153D9F300872C41 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FE25BA902153D9F400872C41 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FE25BA9B2153D9F400872C41 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FE25BA7A2153D9F300872C41 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE25BA842153D9F300872C41 /* ViewController.swift in Sources */,
+				FE25BA822153D9F300872C41 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FE25BA8E2153D9F400872C41 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE25BA972153D9F400872C41 /* KataLoginLogoutTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FE25BA992153D9F400872C41 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE25BAA22153D9F400872C41 /* KataLoginLogoutUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FE25BA942153D9F400872C41 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FE25BA7D2153D9F300872C41 /* KataLoginLogout */;
+			targetProxy = FE25BA932153D9F400872C41 /* PBXContainerItemProxy */;
+		};
+		FE25BA9F2153D9F400872C41 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FE25BA7D2153D9F300872C41 /* KataLoginLogout */;
+			targetProxy = FE25BA9E2153D9F400872C41 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FE25BA852153D9F300872C41 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FE25BA862153D9F300872C41 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FE25BA8A2153D9F400872C41 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FE25BA8B2153D9F400872C41 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FE25BAA42153D9F400872C41 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FE25BAA52153D9F400872C41 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FE25BAA72153D9F400872C41 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = KataLoginLogout/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = stringcalculator.KataLoginLogout;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FE25BAA82153D9F400872C41 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = KataLoginLogout/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = stringcalculator.KataLoginLogout;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		FE25BAAA2153D9F400872C41 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = KataLoginLogoutTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = stringcalculator.KataLoginLogoutTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KataLoginLogout.app/KataLoginLogout";
+			};
+			name = Debug;
+		};
+		FE25BAAB2153D9F400872C41 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = KataLoginLogoutTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = stringcalculator.KataLoginLogoutTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KataLoginLogout.app/KataLoginLogout";
+			};
+			name = Release;
+		};
+		FE25BAAD2153D9F400872C41 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = KataLoginLogoutUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = stringcalculator.KataLoginLogoutUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = KataLoginLogout;
+			};
+			name = Debug;
+		};
+		FE25BAAE2153D9F400872C41 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = KataLoginLogoutUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = stringcalculator.KataLoginLogoutUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = KataLoginLogout;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FE25BA792153D9F300872C41 /* Build configuration list for PBXProject "KataLoginLogout" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FE25BAA42153D9F400872C41 /* Debug */,
+				FE25BAA52153D9F400872C41 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FE25BAA62153D9F400872C41 /* Build configuration list for PBXNativeTarget "KataLoginLogout" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FE25BAA72153D9F400872C41 /* Debug */,
+				FE25BAA82153D9F400872C41 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FE25BAA92153D9F400872C41 /* Build configuration list for PBXNativeTarget "KataLoginLogoutTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FE25BAAA2153D9F400872C41 /* Debug */,
+				FE25BAAB2153D9F400872C41 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FE25BAAC2153D9F400872C41 /* Build configuration list for PBXNativeTarget "KataLoginLogoutUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FE25BAAD2153D9F400872C41 /* Debug */,
+				FE25BAAE2153D9F400872C41 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FE25BA762153D9F300872C41 /* Project object */;
+}
