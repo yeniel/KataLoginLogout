@@ -80,8 +80,37 @@ class KataLoginLogoutTests: XCTestCase {
         XCTAssertTrue(view.showLogoutFormCalled)
     }
     
-    func test_showErrors_is_called_with_wrong_user() {
+    func test_show_login_form_and_hide_logout_form_if_logout_successfully() {
+        givenPresenterWithMockedKataAppWithLogoutResult(result: true)
         
+        presenter.logoutButtonTapped()
+        
+        XCTAssertTrue(view.hideLogoutFormCalled)
+        XCTAssertTrue(view.showLoginFormCalled)
+    }
+    
+    func test_show_only_admin_error_if_login_returns_only_admin() {
+        givenPresenterWithMockedKataAppWithLoginResult(result: .error(.onlyAdmin))
+        
+        presenter.loginButtonTapped(username: "", password: "")
+        
+        XCTAssertTrue(view.showErrorMessage == "Only admin")
+    }
+    
+    func test_show_invalid_user_error_if_login_returns_invalid_user() {
+        givenPresenterWithMockedKataAppWithLoginResult(result: .error(.invalidUser))
+        
+        presenter.loginButtonTapped(username: "", password: "")
+        
+        XCTAssertTrue(view.showErrorMessage == "Invalid User")
+    }
+    
+    func test_show_logout_error_if_logout_fails() {
+        givenPresenterWithMockedKataAppWithLogoutResult(result: false)
+        
+        presenter.logoutButtonTapped()
+        
+        XCTAssertTrue(view.showErrorMessage == "Logout failed")
     }
     
     // MARK: Private methods
@@ -155,14 +184,14 @@ class MockedKataApp: KataApp {
 }
 
 class MockedView: View {
-    var showErrorCalled = false
+    var showErrorMessage: String?
     var showLoginFormCalled = false
     var hideLoginFormCalled = false
     var showLogoutFormCalled = false
     var hideLogoutFormCalled = false
     
     func showError(message: String) {
-        showErrorCalled = true
+        showErrorMessage = message
     }
     
     func showLoginForm() {
