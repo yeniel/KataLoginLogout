@@ -8,54 +8,65 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, View {
 
     @IBOutlet weak var userTextEdit: UITextField!
     @IBOutlet weak var passwordTextEdit: UITextField!
     @IBOutlet weak var loginButton: UIButton!
+    @IBOutlet weak var logoutButton: UIButton!
+    
+    var presenter: Presenter!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        presenter = Presenter(ui: self, kataApp: KataApp(clock: Clock()))
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
 
     @IBAction func loginButtonTap(_ sender: Any) {
-        let clock = Clock()
-        let kataApp = KataApp(clock: clock)
-        var title = ""
+        presenter.loginButtonTapped(username: userTextEdit.text ?? "",
+                                    password: passwordTextEdit.text ?? "")
+    }
+    
+    @IBAction func logoutButtonTapped(_ sender: Any) {
+        presenter.logoutButtonTapped()
+    }
+    
+    func showLoginForm() {
+        userTextEdit.isHidden = false
+        passwordTextEdit.isHidden = false
+        loginButton.isHidden = false
+    }
+    
+    func hideLoginForm() {
+        userTextEdit.isHidden = true
+        passwordTextEdit.isHidden = true
+        loginButton.isHidden = true
+    }
+    
+    func showLogoutForm() {
+        logoutButton.isHidden = false
+    }
+    
+    func hideLogoutForm() {
+        logoutButton.isHidden = true
+    }
+    
+    func showError(message: String) {
+        let alert = UIAlertController(title: "Error",
+                                      message: message,
+                                      preferredStyle: .alert)
         
-        if loginButton.title(for: UIControlState.normal) == "Login" {
-            if kataApp.login(username: userTextEdit.text!, password: passwordTextEdit.text!)
-            {
-                title = "Login OK"
-                
-                userTextEdit.isHidden = true
-                passwordTextEdit.isHidden = true
-                loginButton.setTitle("Logout", for: UIControlState.normal)
-            } else {
-                title = "Login failed"
-            }
-            
-            let alert = UIAlertController(title: title,
-                                          message: "",
-                                          preferredStyle: .alert)
-            
-            let okAction = UIAlertAction(title: "ok", style: UIAlertActionStyle.default, handler: nil)
-            
-            alert.addAction(okAction)
-            self.present(alert, animated: true, completion: nil)
-        } else if loginButton.title(for: UIControlState.normal) == "Logout" {
-            if kataApp.logout() {
-                userTextEdit.isHidden = true
-                passwordTextEdit.isHidden = true
-                loginButton.setTitle("Logout", for: UIControlState.normal)
-            }
-        }
+        let okAction = UIAlertAction(title: "Ok",
+                                     style: UIAlertActionStyle.default,
+                                     handler: nil)
+        
+        alert.addAction(okAction)
+        self.present(alert, animated: true, completion: nil)
     }
     
 }

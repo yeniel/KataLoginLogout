@@ -11,21 +11,49 @@ import UIKit
 
 class KataApp {
     
+    enum Result: Equatable {
+        case success(String)
+        case error(LoginErrors)
+        
+        public static func ==(lhs: Result, rhs:Result) -> Bool {
+            
+            switch (lhs,rhs) {
+            case (.error(let loginErrorA), .error(let logintErrorB)):
+                return loginErrorA == logintErrorB
+            case (.success(let messageA), .success(let messageB)):
+                return messageA == messageB
+            default:
+                return false
+            }
+            
+        }
+    }
+    
+    enum LoginErrors {
+        case onlyAdmin
+        case invalidUser
+    }
+    
     let clock: Clock!
     
     init(clock: Clock) {
         self.clock = clock
     }
     
-    func login(username: String, password: String) throws -> Bool {
-        var loginSuccessfully: Bool
+    func login(username: String, password: String) -> Result {
+        var loginSuccessfully: Result
+        let charset = CharacterSet(charactersIn: ",.;")
         
-        if username == "admin"
-            && password == "admin"
-        {
-            loginSuccessfully = true
+        if username.rangeOfCharacter(from: charset) != nil {
+            loginSuccessfully = Result.error(.invalidUser)
         } else {
-            loginSuccessfully = false
+            if username == "admin"
+                && password == "admin"
+            {
+                loginSuccessfully = Result.success("ok")
+            } else {
+                loginSuccessfully = Result.error(.onlyAdmin)
+            }
         }
         
         return loginSuccessfully

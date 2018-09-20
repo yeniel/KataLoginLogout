@@ -40,12 +40,22 @@
                                     <action selector="loginButtonTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gFQ-IL-hLP"/>
                                 </connections>
                             </button>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GnU-4i-mFL">
+                                <rect key="frame" x="115" y="143" width="129" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Logout"/>
+                                <connections>
+                                    <action selector="loginButtonTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Eiq-pM-1gi"/>
+                                    <action selector="logoutButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RbN-sa-D8b"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
                         <outlet property="loginButton" destination="hZg-cy-iZj" id="RFL-K0-O4D"/>
+                        <outlet property="logoutButton" destination="GnU-4i-mFL" id="jZI-cZ-YFS"/>
                         <outlet property="passwordTextEdit" destination="56T-Jv-uqw" id="a5e-zz-YtB"/>
                         <outlet property="userTextEdit" destination="VcA-v3-7vM" id="Tis-ec-Eqs"/>
                     </connections>

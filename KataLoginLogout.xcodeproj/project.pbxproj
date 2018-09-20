@@ -18,6 +18,8 @@
 		FE25BAB12153E0E600872C41 /* KataApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE25BAAF2153E0E600872C41 /* KataApp.swift */; };
 		FE25BAB32153E78400872C41 /* Clock.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE25BAB22153E78400872C41 /* Clock.swift */; };
 		FE25BAB42153E78400872C41 /* Clock.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE25BAB22153E78400872C41 /* Clock.swift */; };
+		FE25BAB62153F52E00872C41 /* Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE25BAB52153F52E00872C41 /* Presenter.swift */; };
+		FE25BAB72153F52E00872C41 /* Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE25BAB52153F52E00872C41 /* Presenter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,7 @@
 		FE25BAA32153D9F400872C41 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FE25BAAF2153E0E600872C41 /* KataApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KataApp.swift; sourceTree = "<group>"; };
 		FE25BAB22153E78400872C41 /* Clock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Clock.swift; sourceTree = "<group>"; };
+		FE25BAB52153F52E00872C41 /* Presenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Presenter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +114,7 @@
 				FE25BA8D2153D9F400872C41 /* Info.plist */,
 				FE25BAAF2153E0E600872C41 /* KataApp.swift */,
 				FE25BAB22153E78400872C41 /* Clock.swift */,
+				FE25BAB52153F52E00872C41 /* Presenter.swift */,
 			);
 			path = KataLoginLogout;
 			sourceTree = "<group>";
@@ -268,6 +272,7 @@
 				FE25BAB02153E0E600872C41 /* KataApp.swift in Sources */,
 				FE25BAB32153E78400872C41 /* Clock.swift in Sources */,
 				FE25BA822153D9F300872C41 /* AppDelegate.swift in Sources */,
+				FE25BAB62153F52E00872C41 /* Presenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -277,6 +282,7 @@
 			files = (
 				FE25BAB42153E78400872C41 /* Clock.swift in Sources */,
 				FE25BAB12153E0E600872C41 /* KataApp.swift in Sources */,
+				FE25BAB72153F52E00872C41 /* Presenter.swift in Sources */,
 				FE25BA972153D9F400872C41 /* KataLoginLogoutTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
