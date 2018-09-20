@@ -17,7 +17,7 @@ class KataApp {
         self.clock = clock
     }
     
-    func login(username: String, password: String) -> Bool {
+    func login(username: String, password: String) throws -> Bool {
         var loginSuccessfully: Bool
         
         if username == "admin"

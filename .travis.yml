@@ -7,5 +7,5 @@ before_install:
   - gem install xcpretty
 
 script:
-  - set -o pipefail && xcodebuild -project KataLogInLogOutSwift.xcodeproj -scheme 'KataLogInLogOutSwift' -destination 'platform=iOS Simulator,name=iPhone 6s Plus' build test CODE_SIGN_IDENTITY=- | xcpretty -c
+  - set -o pipefail && xcodebuild -project KataLoginLogout.xcodeproj -scheme 'KataLoginLogout' -destination 'platform=iOS Simulator,name=iPhone 6s Plus' build test CODE_SIGN_IDENTITY=- | xcpretty -c
 
