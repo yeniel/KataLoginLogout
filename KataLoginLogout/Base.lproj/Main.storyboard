@@ -33,7 +33,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hZg-cy-iZj">
-                                <rect key="frame" x="168" y="111" width="38" height="30"/>
+                                <rect key="frame" x="115" y="111" width="129" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Login"/>
                                 <connections>
@@ -45,6 +45,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="loginButton" destination="hZg-cy-iZj" id="RFL-K0-O4D"/>
                         <outlet property="passwordTextEdit" destination="56T-Jv-uqw" id="a5e-zz-YtB"/>
                         <outlet property="userTextEdit" destination="VcA-v3-7vM" id="Tis-ec-Eqs"/>
                     </connections>

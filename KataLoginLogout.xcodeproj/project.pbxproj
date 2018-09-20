@@ -14,6 +14,10 @@
 		FE25BA8C2153D9F400872C41 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE25BA8A2153D9F400872C41 /* LaunchScreen.storyboard */; };
 		FE25BA972153D9F400872C41 /* KataLoginLogoutTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE25BA962153D9F400872C41 /* KataLoginLogoutTests.swift */; };
 		FE25BAA22153D9F400872C41 /* KataLoginLogoutUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE25BAA12153D9F400872C41 /* KataLoginLogoutUITests.swift */; };
+		FE25BAB02153E0E600872C41 /* KataApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE25BAAF2153E0E600872C41 /* KataApp.swift */; };
+		FE25BAB12153E0E600872C41 /* KataApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE25BAAF2153E0E600872C41 /* KataApp.swift */; };
+		FE25BAB32153E78400872C41 /* Clock.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE25BAB22153E78400872C41 /* Clock.swift */; };
+		FE25BAB42153E78400872C41 /* Clock.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE25BAB22153E78400872C41 /* Clock.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +51,8 @@
 		FE25BA9D2153D9F400872C41 /* KataLoginLogoutUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KataLoginLogoutUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE25BAA12153D9F400872C41 /* KataLoginLogoutUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KataLoginLogoutUITests.swift; sourceTree = "<group>"; };
 		FE25BAA32153D9F400872C41 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FE25BAAF2153E0E600872C41 /* KataApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KataApp.swift; sourceTree = "<group>"; };
+		FE25BAB22153E78400872C41 /* Clock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Clock.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +109,8 @@
 				FE25BA882153D9F400872C41 /* Assets.xcassets */,
 				FE25BA8A2153D9F400872C41 /* LaunchScreen.storyboard */,
 				FE25BA8D2153D9F400872C41 /* Info.plist */,
+				FE25BAAF2153E0E600872C41 /* KataApp.swift */,
+				FE25BAB22153E78400872C41 /* Clock.swift */,
 			);
 			path = KataLoginLogout;
 			sourceTree = "<group>";
@@ -257,6 +265,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				FE25BA842153D9F300872C41 /* ViewController.swift in Sources */,
+				FE25BAB02153E0E600872C41 /* KataApp.swift in Sources */,
+				FE25BAB32153E78400872C41 /* Clock.swift in Sources */,
 				FE25BA822153D9F300872C41 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -265,6 +275,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FE25BAB42153E78400872C41 /* Clock.swift in Sources */,
+				FE25BAB12153E0E600872C41 /* KataApp.swift in Sources */,
 				FE25BA972153D9F400872C41 /* KataLoginLogoutTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
