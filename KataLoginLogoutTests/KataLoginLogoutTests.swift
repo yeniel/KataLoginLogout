@@ -7,6 +7,7 @@
 //
 
 import XCTest
+import PromiseKit
 @testable import KataLoginLogout
 
 class KataLoginLogoutTests: XCTestCase {
@@ -14,6 +15,8 @@ class KataLoginLogoutTests: XCTestCase {
     var kataApp: KataApp!
     var view: MockedView!
     var presenter: Presenter!
+    let expectation = XCTestExpectation(description: "KataLoginLogoutTests")
+    let timeout: TimeInterval! = TimeInterval(exactly: 10)
     
     override func setUp() {
         super.setUp()
@@ -26,33 +29,41 @@ class KataLoginLogoutTests: XCTestCase {
     func test_returns_success_if_user_and_password_ok() {
         let kataApp = givenKataApp()
         
-        let loginSuccessfully = kataApp.login(username: "admin", password: "admin")
-        
-        XCTAssert(loginSuccessfully == .success("ok"))
+        kataApp.login(username: "admin", password: "admin").done { loginResult in
+            XCTAssert(loginResult == .success("ok"))
+        }.catch {_ in
+            XCTFail()
+        }
     }
     
     func test_returns_onlyAdmin_if_wrong_user() {
         let kataApp = givenKataApp()
         
-        let loginSuccessfully = kataApp.login(username: "a", password: "admin")
-        
-        XCTAssert(loginSuccessfully == .error(.onlyAdmin))
+        kataApp.login(username: "a", password: "admin").done { loginResult in
+            XCTFail()
+        }.catch { error in
+            XCTAssert((error as? KataApp.Result) == KataApp.Result.error(.onlyAdmin))
+        }
     }
     
     func test_returns_onlyAdmin_if_wrong_password() {
         let kataApp = givenKataApp()
         
-        let loginSucessfully = kataApp.login(username: "admin", password: "a")
-        
-        XCTAssert(loginSucessfully == .error(.onlyAdmin))
+        kataApp.login(username: "admin", password: "a").done { loginResult in
+            XCTFail()
+        }.catch { error in
+            XCTAssert((error as? KataApp.Result) == KataApp.Result.error(.onlyAdmin))
+        }
     }
     
     func test_returns_onlyAdmin_if_wrong_user_and_passowrd() {
         let kataApp = givenKataApp()
         
-        let loginSucessfully = kataApp.login(username: "a", password: "a")
-        
-        XCTAssert(loginSucessfully == .error(.onlyAdmin))
+        kataApp.login(username: "a", password: "a").done { loginResult in
+            XCTFail()
+        }.catch { error in
+            XCTAssert((error as? KataApp.Result) == KataApp.Result.error(.onlyAdmin))
+        }
     }
     
     func test_logout_ok() {
@@ -76,6 +87,7 @@ class KataLoginLogoutTests: XCTestCase {
 
         presenter.loginButtonTapped(username: "", password: "")
 
+        wait(for: [view.expectation], timeout: timeout)
         XCTAssertTrue(view.hideLoginFormCalled)
         XCTAssertTrue(view.showLogoutFormCalled)
     }
@@ -94,6 +106,7 @@ class KataLoginLogoutTests: XCTestCase {
         
         presenter.loginButtonTapped(username: "", password: "")
         
+        wait(for: [view.expectation], timeout: timeout)
         XCTAssertTrue(view.showErrorMessage == "Only admin")
     }
     
@@ -102,6 +115,8 @@ class KataLoginLogoutTests: XCTestCase {
         
         presenter.loginButtonTapped(username: "", password: "")
         
+        wait(for: [view.expectation], timeout: timeout)
+        print(view.showErrorMessage ?? "nil")
         XCTAssertTrue(view.showErrorMessage == "Invalid User")
     }
     
@@ -174,8 +189,8 @@ class MockedKataApp: KataApp {
         super.init(clock: Clock())
     }
     
-    override func login(username: String, password: String) -> KataApp.Result {
-        return mockedLoginResult
+    override func login(username: String, password: String) -> Promise<Result> {
+        return Promise.value(mockedLoginResult)
     }
     
     override func logout() -> Bool {
@@ -184,6 +199,7 @@ class MockedKataApp: KataApp {
 }
 
 class MockedView: View {
+    let  expectation = XCTestExpectation(description: "MockedViewExpectation")
     var showErrorMessage: String?
     var showLoginFormCalled = false
     var hideLoginFormCalled = false
@@ -192,23 +208,27 @@ class MockedView: View {
     
     func showError(message: String) {
         showErrorMessage = message
+        expectation.fulfill()
     }
     
     func showLoginForm() {
         showLoginFormCalled = true
+        expectation.fulfill()
     }
     
     func hideLoginForm() {
         hideLoginFormCalled = true
+        expectation.fulfill()
     }
     
     func showLogoutForm() {
         showLogoutFormCalled = true
+        expectation.fulfill()
     }
     
     func hideLogoutForm() {
         hideLogoutFormCalled = true
+        expectation.fulfill()
     }
-    
     
 }

@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import PromiseKit
 
 class Presenter {
     
@@ -19,18 +20,21 @@ class Presenter {
     }
     
     func loginButtonTapped(username: String, password: String) {
-        let loginResult = kataApp.login(username: username, password: password)
-        
-        if loginResult == .success("ok") {
-            ui.hideLoginForm()
-            ui.showLogoutForm()
-        } else if loginResult == .error(.onlyAdmin) {
-            ui.showError(message: "Only admin")
-        } else if loginResult == .error(.invalidUser) {
-            ui.showError(message: "Invalid User")
-        } else {
-            ui.showError(message: "Unknown error")
+        _ = kataApp.login(username: username, password: password).done { loginResult -> Void in
+            
+            if loginResult == .success("ok") {
+                self.ui.hideLoginForm()
+                self.ui.showLogoutForm()
+            } else if loginResult == .error(.onlyAdmin) {
+                self.ui.showError(message: "Only admin")
+            } else if loginResult == .error(.invalidUser) {
+                self.ui.showError(message: "Invalid User")
+            } else {
+                self.ui.showError(message: "Unknown error")
+            }
+            
         }
+        
     }
     
     func logoutButtonTapped() {

@@ -8,10 +8,11 @@
 
 import Foundation
 import UIKit
+import PromiseKit
 
 class KataApp {
     
-    enum Result: Equatable {
+    enum Result: Error, Equatable {
         case success(String)
         case error(LoginErrors)
         
@@ -40,7 +41,7 @@ class KataApp {
         self.clock = clock
     }
     
-    func login(username: String, password: String) -> Result {
+    func login(username: String, password: String) -> Promise<Result> {
         var loginSuccessfully: Result
         let charset = CharacterSet(charactersIn: ",.;")
         
@@ -52,11 +53,11 @@ class KataApp {
             {
                 loginSuccessfully = Result.success("ok")
             } else {
-                loginSuccessfully = Result.error(.onlyAdmin)
+                return Promise(error: Result.error(.onlyAdmin))
             }
         }
         
-        return loginSuccessfully
+        return Promise.value(loginSuccessfully)
     }
     
     func logout() -> Bool {
